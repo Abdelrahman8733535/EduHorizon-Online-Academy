@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduHorizon Academy - Learn Arabic Language and Quran</title>
+    <meta name="description" content="A comprehensive educational platform for Arabs and non-Arabs to master Arabic language and Quran recitation">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="logo.png" type="image/svg+xml">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Free Trial Notification -->
+    <div id="freeTrialNotification" class="free-trial-notification">
+        <div class="container">
+            <div class="notification-content">
+                <i class="fas fa-clock"></i>
+                <span class="notification-text" data-key="freeTrialText">Your free trial will expire in 3 days. Upgrade now to continue accessing all features.</span>
+            </div>
+            <div class="notification-actions">
+                <button class="btn-close" onclick="closeFreeTrialNotification()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="logo.png" alt="EduHorizon Logo">
+                </div>
+                <button class="mobile-menu-toggle" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Navigation -->
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link" data-key="home">HOME</a></li>
+                        <li><a href="about.html" class="nav-link" data-key="about">ABOUT</a></li>
+                        <li><a href="services.html" class="nav-link" data-key="ourService">OUR SERVICE</a></li>
+                        <li><a href="courses.html" class="nav-link" data-key="courses">COURSES</a></li>
+                        <li><a href="test.html" class="nav-link" data-key="testYourself">TEST YOURSELF</a></li>
+                        <li><a href="register.html" class="nav-link" data-key="register">REGISTER</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Header Actions -->
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title" data-key="ourCourses">Our Courses</h1>
+                <p class="page-subtitle" data-key="ourCoursesDesc">Choose from a wide range of courses designed to help you master Arabic and Quran</p>
+            </div>
+        </section>
+
+        <!-- Books Section -->
+        <section id="books" class="books-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-en="Educational Books Library" data-ar="مكتبة الكتب التعليمية">Educational Books Library</h2>
+                    <p class="section-description" data-en="A selected collection of the best books for teaching Arabic to Arabs and non-Arabs" data-ar="مجموعة مختارة من أفضل الكتب لتعليم اللغة العربية للعرب وغير العرب">A selected collection of the best books for teaching Arabic to Arabs and non-Arabs</p>
+                </div>
+                
+                <div class="books-grid">
+                    <!-- Book 1: Arabic Between Your Hands -->
+                    <div class="book-card">
+                        <div class="book-image">
+                            <img src="arabic-between-hands.jpg" alt="Arabic Between Your Hands">
+                            <div class="book-level" data-en="Beginner to Advanced" data-ar="مبتدئ إلى متقدم">Beginner to Advanced</div>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title" data-en="Arabic Between Your Hands" data-ar="العربية بين يديك">Arabic Between Your Hands</h3>
+                            <p class="book-author" data-en="Dr. Abdul Rahman Ibrahim Al-Fawzan and others" data-ar="د. عبد الرحمن إبراهيم الفوزان وآخرون">Dr. Abdul Rahman Ibrahim Al-Fawzan and others</p>
+                            <p class="book-description" data-en="A comprehensive series for teaching Arabic to non-native speakers, characterized by scientific progression and clear methodology" data-ar="سلسلة متكاملة لتعليم اللغة العربية لغير الناطقين بها، تتميز بالتدرج العلمي والمنهجية الواضحة">A comprehensive series for teaching Arabic to non-native speakers, characterized by scientific progression and clear methodology</p>
+                            <div class="book-info">
+                                <span class="book-volumes" data-en="8 volumes" data-ar="8 مجلدات">8 volumes</span>
+                                <span class="book-rating">
+                                    <i class="fas fa-star"></i>
+                                    4.8
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Book 2: Your Bridge to Arabic -->
+                    <div class="book-card">
+                        <div class="book-image">
+                            <img src="bridge-to-arabic.jpg" alt="Your Bridge to Arabic">
+                            <div class="book-level" data-en="Beginner" data-ar="مبتدئ">Beginner</div>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title" data-en="Your Bridge to Arabic" data-ar="جسرك إلى العربية">Your Bridge to Arabic</h3>
+                            <p class="book-author" data-en="Dr. Emad Ahmed Al-Barghouti" data-ar="د. عماد أحمد البرغوثي">Dr. Emad Ahmed Al-Barghouti</p>
+                            <p class="book-description" data-en="An innovative book for teaching Arabic to non-native speakers, focusing on practical application and interaction" data-ar="كتاب مبتكر لتعليم اللغة العربية للناطقين بغيرها، يركز على التطبيق العملي والتفاعل">An innovative book for teaching Arabic to non-native speakers, focusing on practical application and interaction</p>
+                            <div class="book-info">
+                                <span class="book-volumes" data-en="1 volume" data-ar="مجلد واحد">1 volume</span>
+                                <span class="book-rating">
+                                    <i class="fas fa-star"></i>
+                                    4.6
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Book 3: Madinah Arabic Reader -->
+                    <div class="book-card">
+                        <div class="book-image">
+                            <img src="madinah-arabic-reader.jpg" alt="Madinah Arabic Reader">
+                            <div class="book-level" data-en="Beginner to Intermediate" data-ar="مبتدئ إلى متوسط">Beginner to Intermediate</div>
+                        </div>
+                        <div class="book-content">
+                            <h3 class="book-title">Madinah Arabic Reader</h3>
+                            <p class="book-author">Dr. V. Abdur Rahim</p>
+                            <p class="book-description" data-en="A globally famous series for teaching Arabic, characterized by simplicity and clarity in presentation" data-ar="سلسلة مشهورة عالمياً لتعليم اللغة العربية، تتميز بالبساطة والوضوح في العرض">A globally famous series for teaching Arabic, characterized by simplicity and clarity in presentation</p>
+                            <div class="book-info">
+                                <span class="book-volumes" data-en="8 books" data-ar="8 كتب">8 books</span>
+                                <span class="book-rating">
+                                    <i class="fas fa-star"></i>
+                                    4.7
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+        <!-- Book Preview Modal -->
+        <div id="bookPreviewModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2 id="modalBookTitle"></h2>
+                <div id="bookViewer"></div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title" data-key="ctaTitle">Ready to Start Learning?</h2>
+                    <p class="cta-description" data-key="ctaDesc">Join thousands of students who are learning Arabic and Quran with us</p>
+                    <a href="register.html" class="btn-primary large" data-key="registerFree">Register Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="EduHorizon Logo">
+                    </div>
+                    <p class="footer-description" data-key="footerDesc">EduHorizon Academy - A leading educational platform specialized in teaching Arabic language and the Holy Quran for Arabs and non-Arabs around the world.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-key="quickLinks">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-key="home">Home</a></li>
+                        <li><a href="about.html" data-key="about">About</a></li>
+                        <li><a href="services.html" data-key="ourService">Our Services</a></li>
+                        <li><a href="courses.html" data-key="courses">Courses</a></li>
+                        <li><a href="test.html" data-key="testYourself">Test Yourself</a></li>
+                        <li><a href="register.html" data-key="register">Register</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-key="educationalPrograms">Educational Programs</h3>
+                    <ul class="footer-links">
+                        <li><a href="courses.html" data-key="arabicForBeginners">Arabic for Beginners</a></li>
+                        <li><a href="courses.html" data-key="quranTeaching">Quran Teaching</a></li>
+                        <li><a href="courses.html" data-key="grammarAndMorphology">Grammar and Morphology</a></li>
+                        <li><a href="courses.html" data-key="arabicLiterature">Arabic Literature</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-key="contactUs">Contact Us</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> <span data-key="emailContact">Email: eduhorizonn@gmail.com</span></p>
+                        <p><i class="fas fa-phone"></i> <span data-key="phoneContact">Phone: +971 58 645 7797</span></p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span data-key="unitedArabEmirates">United Arab Emirates</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 <span data-key="allRights">EduHorizon Academy. All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+<script>
+function toggleMenu() {
+  document.querySelector('.nav-list').classList.toggle('active');
+}
+</script>
+</body>
+</html>
+

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduHorizon Academy - Learn Arabic Language and Quran</title>
+    <meta name="description" content="A comprehensive educational platform for Arabs and non-Arabs to master Arabic language and Quran recitation">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="logo.png" type="image/svg+xml">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Free Trial Notification -->
+    <div id="freeTrialNotification" class="free-trial-notification">
+        <div class="container">
+            <div class="notification-content">
+                <i class="fas fa-clock"></i>
+                <span class="notification-text" data-key="freeTrialText">Your free trial will expire in 3 days. Upgrade now to continue accessing all features.</span>
+            </div>
+            <div class="notification-actions">
+                <button class="btn-close" onclick="closeFreeTrialNotification()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="logo.png" alt="EduHorizon Logo">
+                </div>
+                <button class="mobile-menu-toggle" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Navigation -->
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link" data-key="home">HOME</a></li>
+                        <li><a href="about.html" class="nav-link" data-key="about">ABOUT</a></li>
+                        <li><a href="services.html" class="nav-link" data-key="ourService">OUR SERVICE</a></li>
+                        <li><a href="courses.html" class="nav-link" data-key="courses">COURSES</a></li>
+                        <li><a href="test.html" class="nav-link" data-key="testYourself">TEST YOURSELF</a></li>
+                        <li><a href="register.html" class="nav-link" data-key="register">REGISTER</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Header Actions -->
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title" data-key="registerForEduHorizon">Register for EduHorizon Academy</h1>
+                <p class="page-subtitle" data-key="registerForEduHorizonDesc">Start your journey in learning Arabic language and Holy Quran with us</p>
+            </div>
+        </section>
+
+        <!-- Registration Section -->
+        <section class="registration-section">
+            <div class="container">
+                <div class="registration-form-container">
+                    <form class="registration-form" id="registrationForm">
+                        <!-- Personal Information -->
+                        <div class="form-section">
+                            <h3 class="form-section-title" data-key="Contact US">Contact US</h3>
+                        </div>
+                        <div>
+                            <h3>📧 Email: eduhorizonn@gmail.com<br>
+                                   📞 Phone: +971 58 645 7797<br>
+                                   FaceBook : <a href="https://www.facebook.com/share/1JAycRZKo2/" data-key="Click Here" data-nav-link target="_blank">Click Here</a><br>
+                                    <br>
+                                    Sample Message:<br>
+                                    Hello,<br>
+                                    Thank you for contacting EduHorizon Academy.<br>
+                                    We are here to assist you with learning Arabic, the Quran, and all educational courses.<br>
+                                    You can reach us anytime via email or phone.<br>
+                                    <br>
+                                    Best regards,<br>
+                                    The EduHorizon Team</h3>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Message -->
+        <div id="successMessage" class="success-message hidden">
+            <div class="success-content">
+                <i class="fas fa-check-circle"></i>
+                <h3 data-key="registrationSuccessful">Registration Successful!</h3>
+                <p data-key="registrationSuccessfulDesc">Thank you for registering with EduHorizon Academy. We will contact you soon.</p>
+                <div class="booking-confirmation">
+                    <h4 data-key="bookingConfirmation">Booking Confirmation</h4>
+                    <p data-key="bookingConfirmationDesc">Your registration has been confirmed and your information has been sent to our team. You will receive a confirmation email shortly.</p>
+                    <div class="confirmation-details" id="confirmationDetails">
+                        <!-- Details will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title" data-key="ctaTitle">Start Your Arabic Learning Journey Today</h2>
+                    <p class="cta-description" data-key="ctaDesc">Join thousands of students who are learning Arabic and Quran with us</p>
+                    <a href="register.html" class="btn-primary large" data-key="registerFree">Register Now for Free</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="EduHorizon Logo">
+                    </div>
+                    <p class="footer-description" data-key="footerDesc">EduHorizon Academy - A leading educational platform specialized in teaching Arabic language and the Holy Quran for Arabs and non-Arabs around the world.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-key="quickLinks">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-key="home">Home</a></li>
+                        <li><a href="about.html" data-key="about">About</a></li>
+                        <li><a href="services.html" data-key="ourService">Our Services</a></li>
+                        <li><a href="courses.html" data-key="courses">Courses</a></li>
+                        <li><a href="test.html" data-key="testYourself">Test Yourself</a></li>
+                        <li><a href="register.html" data-key="register">Register</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-key="educationalPrograms">Educational Programs</h3>
+                    <ul class="footer-links">
+                        <li><a href="courses.html" data-key="arabicForBeginners">Arabic for Beginners</a></li>
+                        <li><a href="courses.html" data-key="quranTeaching">Quran Teaching</a></li>
+                        <li><a href="courses.html" data-key="grammarAndMorphology">Grammar and Morphology</a></li>
+                        <li><a href="courses.html" data-key="arabicLiterature">Arabic Literature</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-key="contactUs">Contact Us</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> <span data-key="emailContact">Email: eduhorizonn@gmail.com</span></p>
+                        <p><i class="fas fa-phone"></i> <span data-key="phoneContact">Phone: +971 58 645 7797</span></p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span data-key="unitedArabEmirates">United Arab Emirates</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 <span data-key="allRights">EduHorizon Academy. All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+<script>
+function toggleMenu() {
+  document.querySelector('.nav-list').classList.toggle('active');
+}
+</script>
+</body>
+</html>

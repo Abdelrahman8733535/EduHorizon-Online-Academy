@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduHorizon Academy - Learn Arabic Language and Quran</title>
+    <meta name="description" content="A comprehensive educational platform for Arabs and non-Arabs to master Arabic language and Quran recitation">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="logo.png" type="image/svg+xml">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Free Trial Notification -->
+    <div id="freeTrialNotification" class="free-trial-notification">
+        <div class="container">
+            <div class="notification-content">
+                <i class="fas fa-clock"></i>
+                <span class="notification-text" data-key="freeTrialText">Your free trial will expire in 3 days. Upgrade now to continue accessing all features.</span>
+            </div>
+            <div class="notification-actions">
+                <button class="btn-close" onclick="closeFreeTrialNotification()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="logo.png" alt="EduHorizon Logo">
+                </div>
+                <button class="mobile-menu-toggle" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Navigation -->
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link" data-key="home">HOME</a></li>
+                        <li><a href="about.html" class="nav-link" data-key="about">ABOUT</a></li>
+                        <li><a href="services.html" class="nav-link" data-key="ourService">OUR SERVICE</a></li>
+                        <li><a href="courses.html" class="nav-link" data-key="courses">COURSES</a></li>
+                        <li><a href="test.html" class="nav-link" data-key="testYourSelf">TEST YOURSELF</a></li>
+                        <li><a href="register.html" class="nav-link" data-key="register">REGISTER</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Header Actions -->
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title" data-key="testYourArabicLevel">Test Your Arabic Level</h1>
+                <p class="page-subtitle" data-key="testYourArabicLevelDesc">Take our quick assessment to determine your Arabic proficiency and find the perfect course for you.</p>
+            </div>
+        </section>
+
+        <!-- English Level Test Section -->
+        <section class="test-section">
+            <div class="container">
+                <div class="test-container">
+                    <h2 class="section-title" data-key="arabicProficiencyTest">Arabic Proficiency Test</h2>
+                    <form id="arabicTestForm" class="test-form">
+                        <!-- Question 1 -->
+                        <div class="question-card">
+                            <p class="question-text" data-key="q1">1. اختر الجملة الصحيحة:</p>
+                            <div class="options">
+                                <label><input type="radio" name="q1" value="a"> <span data-key="q1a">الولد يذهبو إلى المدرسة كل يوم.</span></label>
+                                <label><input type="radio" name="q1" value="b"> <span data-key="q1b">الولد يذهب إلى المدرسة كل يوم.</span></label>
+                                <label><input type="radio" name="q1" value="c"> <span data-key="q1c">الولد ذاهب إلى المدرسة كل يوم.</span></label>
+                            </div>
+                        </div>
+
+                        <!-- Question 2 -->
+                        <div class="question-card">
+                            <p class="question-text" data-key="q2">ما هو الماضي من كلمة "يأكل"؟</p>
+                            <div class="options">
+                                <label><input type="radio" name="q2" value="a"> <span data-key="q2a">مأكول أو قد أُكل</span></label>
+                                <label><input type="radio" name="q2" value="b"> <span data-key="q2b">أكل</span></label>
+                                <label><input type="radio" name="q2" value="c"> <span data-key="q2c">يأكل / الأكل</span></label>
+                            </div>
+                        </div>
+
+                        <!-- Question 3 -->
+                        <div class="question-card">
+                            <p class="question-text" data-key="q3">3. أكمل الجملة: "أنا ___ سعيد برؤيتك."</p>
+                            <div class="options">
+                                <label><input type="radio" name="q3" value="a"> <span data-key="q3a">أكون</span></label>
+                                <label><input type="radio" name="q3" value="b"> <span data-key="q3b">هو</span></label>
+                                <label><input type="radio" name="q3" value="c"> <span data-key="q3c">هم</span></label>
+                            </div>
+                        </div>
+
+
+                        <!-- Question 4 -->
+                        <div class="question-card">
+                            <p class="question-text" data-key="q4">4. أي كلمة هي مرادف لكلمة "كبير"؟</p>
+                            <div class="options">
+                                <label><input type="radio" name="q4" value="a"> <span data-key="q4a">صغير</span></label>
+                                <label><input type="radio" name="q4" value="b"> <span data-key="q4b">ضخم</span></label>
+                                <label><input type="radio" name="q4" value="c"> <span data-key="q4c">ضئيل</span></label>
+                            </div>
+                        </div>
+
+                        <!-- Question 5 -->
+                        <div class="question-card">
+                            <p class="question-text" data-key="q5">5. حدّد الاسم في الجملة: "الثعلب البني السريع يقفز فوق الكلب الكسول."</p>
+                            <div class="options">
+                                <label><input type="radio" name="q5" value="a"> <span data-key="q5a">السريع</span></label>
+                                <label><input type="radio" name="q5" value="b"> <span data-key="q5b">يقفز</span></label>
+                                <label><input type="radio" name="q5" value="c"> <span data-key="q5c">ثعلب</span></label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-primary large" data-key="submitTest">Submit Test</button>
+                    </form>
+                    <div id="testResults" class="test-results hidden">
+                        <h3 class="section-title" data-key="yourResult">Your Result</h3>
+                        <p class="result-text" data-key="scoreText">You scored <span id="score"></span> out of 5.</p>
+                        <p class="level-text" data-key="levelText">Your estimated Arabic level is: <span id="level"></span></p>
+                        <button class="btn-secondary" onclick="location.reload()" data-key="retakeTest">Retake Test</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title" data-key="readyToImproveArabic">Ready to Improve Your Arabic?</h2>
+                    <p class="cta-description" data-key="readyToImproveArabicDesc">Based on your test results, we can recommend the best courses for you.</p>
+                    <a href="register.html" class="btn-primary large" data-key="registerNow">Register Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="EduHorizon Logo">
+                    </div>
+                    <p class="footer-description" data-key="footerDesc">EduHorizon Academy - A leading educational platform specialized in teaching Arabic language and the Holy Quran for Arabs and non-Arabs around the world.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-key="quickLinks">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-key="home">Home</a></li>
+                        <li><a href="about.html" data-key="about">About</a></li>
+                        <li><a href="services.html" data-key="ourService">Our Services</a></li>
+                        <li><a href="courses.html" data-key="courses">Courses</a></li>
+                        <li><a href="test.html" class="nav-link" data-key="testYourself">Test Yourself</a></li>
+                        <li><a href="register.html" data-key="register">Register</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-key="educationalPrograms">Educational Programs</h3>
+                    <ul class="footer-links">
+                        <li><a href="courses.html" data-key="arabicForBeginners">Arabic for Beginners</a></li>
+                        <li><a href="courses.html" data-key="quranTeaching">Quran Teaching</a></li>
+                        <li><a href="courses.html" data-key="grammarAndMorphology">Grammar and Morphology</a></li>
+                        <li><a href="courses.html" data-key="arabicLiterature">Arabic Literature</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-key="contactUs">Contact Us</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> <span data-key="emailContact">Email: eduhorizonn@gmail.com</span></p>
+                        <p><i class="fas fa-phone"></i> <span data-key="phoneContact">Phone: +971 58 645 7797</span></p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span data-key="unitedArabEmirates">United Arab Emirates</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 <span data-key="allRights">EduHorizon Academy. All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="test.js"></script>
+<script>
+function toggleMenu() {
+  document.querySelector('.nav-list').classList.toggle('active');
+}
+</script>
+</body>
+</html>
+

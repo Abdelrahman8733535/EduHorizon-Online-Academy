@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduHorizon Academy - Learn Arabic Language and Quran</title>
+    <meta name="description" content="A comprehensive educational platform for Arabs and non-Arabs to master Arabic language and Quran recitation">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="logo.png" type="image/svg+xml">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Free Trial Notification -->
+    <div id="freeTrialNotification" class="free-trial-notification">
+        <div class="container">
+            <div class="notification-content">
+                <i class="fas fa-clock"></i>
+                <span class="notification-text" data-key="freeTrialText">Your free trial will expire in 3 days. Upgrade now to continue accessing all features.</span>
+            </div>
+            <div class="notification-actions">
+                <button class="btn-close" onclick="closeFreeTrialNotification()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="logo.png" alt="EduHorizon Logo">
+                </div>
+                <button class="mobile-menu-toggle" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Navigation -->
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link" data-key="home">HOME</a></li>
+                        <li><a href="about.html" class="nav-link" data-key="about">ABOUT</a></li>
+                        <li><a href="services.html" class="nav-link" data-key="ourService">OUR SERVICE</a></li>
+                        <li><a href="courses.html" class="nav-link" data-key="courses">COURSES</a></li>
+                        <li><a href="test.html" class="nav-link" data-key="testYourself">TEST YOURSELF</a></li>
+                        <li><a href="register.html" class="nav-link" data-key="register">REGISTER</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Header Actions -->
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title" data-key="ourService">Our Services</h1>
+                <p class="page-subtitle" data-key="ourServiceDesc">Comprehensive Arabic language and Quran education services tailored to your needs</p>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="services-section">
+            <div class="container">
+                <div class="services-grid">
+                    <!-- Arabic Language Teaching -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3 class="service-title" data-key="arabicLanguageTeaching">Arabic Language Teaching</h3>
+                        <p class="service-description" data-key="arabicLanguageTeachingDesc">Comprehensive Arabic language courses for all levels, from beginner to advanced, designed for both native and non-native speakers.</p>
+                        <ul class="service-features">
+                            <li data-key="grammarAndSyntax">Grammar and Syntax</li>
+                            <li data-key="vocabularyBuilding">Vocabulary Building</li>
+                            <li data-key="conversationPractice">Conversation Practice</li>
+                            <li data-key="writingSkills">Writing Skills</li>
+                        </ul>
+                        <a href="register.html" class="btn-primary" data-key="learnMore">Learn More</a>
+                    </div>
+
+                    <!-- Quran Teaching -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-book-quran"></i>
+                        </div>
+                        <h3 class="service-title" data-key="quranTeaching">Quran Teaching</h3>
+                        <p class="service-description" data-key="quranTeachingDesc">Learn proper Quran recitation with Tajweed rules, memorization techniques, and understanding of meanings.</p>
+                        <ul class="service-features">
+                            <li data-key="tajweedRules">Tajweed Rules</li>
+                            <li data-key="memorizationHifz">Memorization (Hifz)</li>
+                            <li data-key="tafseerInterpretation">Tafseer (Interpretation)</li>
+                            <li data-key="quranicArabic">Quranic Arabic</li>
+                        </ul>
+                        <a href="register.html" class="btn-primary" data-key="learnMore">Learn More</a>
+                    </div>
+
+                    <!-- Online Classes -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3 class="service-title" data-key="onlineClasses">Online Classes</h3>
+                        <p class="service-description" data-key="onlineClassesDesc">Interactive online classes with qualified teachers, flexible scheduling, and personalized learning paths.</p>
+                        <ul class="service-features">
+                            <li data-key="liveInteractiveSessions">Live Interactive Sessions</li>
+                            <li data-key="recordedLessons">Recorded Lessons</li>
+                            <li data-key="oneOnOneTutoring">One-on-One Tutoring</li>
+                            <li data-key="groupClasses">Group Classes</li>
+                        </ul>
+                        <a href="register.html" class="btn-primary" data-key="learnMore">Learn More</a>
+                    </div>
+
+                    <!-- Assessment & Testing -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h3 class="service-title" data-key="assessmentTesting">Assessment & Testing</h3>
+                        <p class="service-description" data-key="assessmentTestingDesc">Comprehensive assessment tools to evaluate your Arabic language proficiency and track your progress.</p>
+                        <ul class="service-features">
+                            <li data-key="placementTests">Placement Tests</li>
+                            <li data-key="progressTracking">Progress Tracking</li>
+                            <li data-key="skillAssessment">Skill Assessment</li>
+                            <li data-key="certification">Certification</li>
+                        </ul>
+                        <a href="test.html" class="btn-primary" data-key="takeTest">Take Test</a>
+                    </div>
+
+                    <!-- Learning Materials -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3 class="service-title" data-key="learningMaterials">Learning Materials</h3>
+                        <p class="service-description" data-key="learningMaterialsDesc">Access to a comprehensive library of educational books, resources, and multimedia content.</p>
+                        <ul class="service-features">
+                            <li data-key="digitalTextbooks">Digital Textbooks</li>
+                            <li data-key="audioResources">Audio Resources</li>
+                            <li data-key="videoLessons">Video Lessons</li>
+                            <li data-key="practiceExercises">Practice Exercises</li>
+                        </ul>
+                        <a href="courses.html" class="btn-primary" data-key="browseMaterials">Browse Materials</a>
+                    </div>
+
+                    <!-- Student Support -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3 class="service-title" data-key="studentSupport">Student Support</h3>
+                        <p class="service-description" data-key="studentSupportDesc">24/7 student support services to help you with technical issues, academic guidance, and learning assistance.</p>
+                        <ul class="service-features">
+                            <li data-key="technicalSupport">Technical Support</li>
+                            <li data-key="academicCounseling">Academic Counseling</li>
+                            <li data-key="learningAssistance">Learning Assistance</li>
+                            <li data-key="communityForums">Community Forums</li>
+                        </ul>
+                        <a href="register.html" class="btn-primary" data-key="getSupport">Get Support</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Features -->
+        <section class="service-features-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-key="whyChooseOurServices">Why Choose Our Services?</h2>
+                    <p class="section-description" data-key="whyChooseOurServicesDesc">We offer unique advantages that set us apart from other educational platforms</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3 data-key="expertInstructors">Expert Instructors</h3>
+                        <p data-key="expertInstructorsDesc">Learn from qualified native Arabic speakers with years of teaching experience</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 data-key="flexibleSchedule">Flexible Schedule</h3>
+                        <p data-key="flexibleScheduleDesc">Study at your own pace with flexible timing that fits your lifestyle</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3 data-key="certifiedPrograms">Certified Programs</h3>
+                        <p data-key="certifiedProgramsDesc">Earn recognized certificates upon successful completion of courses</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 data-key="mobileLearning">Mobile Learning</h3>
+                        <p data-key="mobileLearningDesc">Access your courses anytime, anywhere with our mobile-friendly platform</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title" data-key="ctaTitle">Ready to Start Learning?</h2>
+                    <p class="cta-description" data-key="ctaDesc">Join thousands of students who are learning Arabic and Quran with us</p>
+                    <a href="register.html" class="btn-primary large" data-key="registerFree">Register Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="EduHorizon Logo">
+                    </div>
+                    <p class="footer-description" data-key="footerDesc">EduHorizon Academy - A leading educational platform specialized in teaching Arabic language and the Holy Quran for Arabs and non-Arabs around the world.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-key="quickLinks">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-key="home">Home</a></li>
+                        <li><a href="about.html" data-key="about">About</a></li>
+                        <li><a href="services.html" data-key="ourService">Our Services</a></li>
+                        <li><a href="courses.html" data-key="courses">Courses</a></li>
+                        <li><a href="test.html" data-key="testYourself">Test Yourself</a></li>
+                        <li><a href="register.html" data-key="register">Register</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-key="educationalPrograms">Educational Programs</h3>
+                    <ul class="footer-links">
+                        <li><a href="courses.html" data-key="arabicForBeginners">Arabic for Beginners</a></li>
+                        <li><a href="courses.html" data-key="quranTeaching">Quran Teaching</a></li>
+                        <li><a href="courses.html" data-key="grammarAndMorphology">Grammar and Morphology</a></li>
+                        <li><a href="courses.html" data-key="arabicLiterature">Arabic Literature</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-key="contactUs">Contact Us</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> <span data-key="emailContact">Email: eduhorizonn@gmail.com</span></p>
+                        <p><i class="fas fa-phone"></i> <span data-key="phoneContact">Phone: +971 58 645 7797</span></p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span data-key="unitedArabEmirates">United Arab Emirates</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 <span data-key="allRights">EduHorizon Academy. All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+<script>
+function toggleMenu() {
+  document.querySelector('.nav-list').classList.toggle('active');
+}
+</script>
+</body>
+</html>
+

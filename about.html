@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduHorizon Academy - Learn Arabic Language and Quran</title>
+    <meta name="description" content="A comprehensive educational platform for Arabs and non-Arabs to master Arabic language and Quran recitation">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="logo.png" type="image/svg+xml">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Free Trial Notification -->
+    <div id="freeTrialNotification" class="free-trial-notification">
+        <div class="container">
+            <div class="notification-content">
+                <i class="fas fa-clock"></i>
+                <span class="notification-text" data-key="freeTrialText">Your free trial will expire in 3 days. Upgrade now to continue accessing all features.</span>
+            </div>
+            <div class="notification-actions">
+                <button class="btn-close" onclick="closeFreeTrialNotification()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="logo.png" alt="EduHorizon Logo">
+                </div>
+                <button class="mobile-menu-toggle" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Navigation -->
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link" data-key="home">HOME</a></li>
+                        <li><a href="about.html" class="nav-link" data-key="about">ABOUT</a></li>
+                        <li><a href="services.html" class="nav-link" data-key="ourService">OUR SERVICE</a></li>
+                        <li><a href="courses.html" class="nav-link" data-key="courses">COURSES</a></li>
+                        <li><a href="test.html" class="nav-link" data-key="testYourself">TEST YOURSELF</a></li>
+                        <li><a href="register.html" class="nav-link" data-key="register">REGISTER</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Header Actions -->
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title" data-key="about">About EduHorizon Academy</h1>
+                <p class="page-subtitle" data-key="aboutDesc">Discover our mission to spread Arabic language and Quranic knowledge worldwide</p>
+            </div>
+        </section>
+
+        <!-- About Content -->
+        <section class="about-content">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2 class="section-title" data-key="ourStory">Our Story</h2>
+                        <p data-key="ourStoryDesc1">EduHorizon Academy was founded with a noble mission: to make Arabic language and Quranic education accessible to learners worldwide. We believe that language is the key to understanding culture, heritage, and spiritual growth.</p>
+                        
+                        <p data-key="ourStoryDesc2">Our academy combines traditional teaching methods with modern technology to create an engaging and effective learning experience. We serve both native Arabic speakers looking to deepen their knowledge and non-Arabic speakers beginning their journey with this beautiful language.</p>
+                    </div>
+                    
+                    <div class="about-image">
+                        <img src="logo.png" alt="EduHorizon Academy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section class="mission-vision">
+            <div class="container">
+                <div class="mv-grid">
+                    <div class="mv-card">
+                        <div class="mv-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 data-key="ourMission">Our Mission</h3>
+                        <p data-key="ourMissionDesc">To provide high-quality Arabic language and Quranic education through innovative teaching methods, qualified instructors, and comprehensive curricula that cater to learners of all levels and backgrounds.</p>
+                    </div>
+                    
+                    <div class="mv-card">
+                        <div class="mv-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3 data-key="ourVision">Our Vision</h3>
+                        <p data-key="ourVisionDesc">To become the leading global platform for Arabic language and Quranic education, fostering cultural understanding and spiritual growth while preserving the beauty and richness of the Arabic language for future generations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values -->
+        <section class="values-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-key="ourValues">Our Values</h2>
+                    <p class="section-description" data-key="ourValuesDesc">The principles that guide our educational approach and commitment to excellence</p>
+                </div>
+                
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 data-key="excellence">Excellence</h3>
+                        <p data-key="excellenceDesc">We strive for the highest standards in education, ensuring quality content and effective teaching methods.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 data-key="inclusivity">Inclusivity</h3>
+                        <p data-key="inclusivityDesc">We welcome learners from all backgrounds, cultures, and skill levels, creating an inclusive learning environment.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 data-key="innovation">Innovation</h3>
+                        <p data-key="innovationDesc">We embrace modern technology and innovative teaching methods to enhance the learning experience.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3 data-key="authenticity">Authenticity</h3>
+                        <p data-key="authenticityDesc">We maintain the authentic essence of Arabic language and Islamic teachings while making them accessible to modern learners.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title" data-key="ctaTitle">Ready to Start Your Learning Journey?</h2>
+                    <p class="cta-description" data-key="ctaDesc">Join thousands of students who trust EduHorizon Academy for their Arabic language education</p>
+                    <a href="register.html" class="btn-primary large" data-key="registerFree">Register Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="EduHorizon Logo">
+                    </div>
+                    <p class="footer-description" data-key="footerDesc">EduHorizon Academy - A leading educational platform specialized in teaching Arabic language and the Holy Quran for Arabs and non-Arabs around the world.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-key="quickLinks">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-key="home">Home</a></li>
+                        <li><a href="about.html" data-key="about">About</a></li>
+                        <li><a href="services.html" data-key="ourService">Our Services</a></li>
+                        <li><a href="courses.html" data-key="courses">Courses</a></li>
+                        <li><a href="test.html" data-key="testYourself">Test Yourself</a></li>
+                        <li><a href="register.html" data-key="register">Register</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-key="educationalPrograms">Educational Programs</h3>
+                    <ul class="footer-links">
+                        <li><a href="courses.html" data-key="arabicForBeginners">Arabic for Beginners</a></li>
+                        <li><a href="courses.html" data-key="quranTeaching">Quran Teaching</a></li>
+                        <li><a href="courses.html" data-key="grammarAndMorphology">Grammar and Morphology</a></li>
+                        <li><a href="courses.html" data-key="arabicLiterature">Arabic Literature</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-key="contactUs">Contact Us</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> <span data-key="emailContact">Email: eduhorizonn@gmail.com</span></p>
+                        <p><i class="fas fa-phone"></i> <span data-key="phoneContact">Phone: +971 58 645 7797</span></p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span data-key="unitedArabEmirates">United Arab Emirates</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 <span data-key="allRights">EduHorizon Academy. All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+<script>
+function toggleMenu() {
+  document.querySelector('.nav-list').classList.toggle('active');
+}
+</script>
+</body>
+</html>
+
